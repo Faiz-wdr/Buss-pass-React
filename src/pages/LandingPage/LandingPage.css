@@ -1,0 +1,85 @@
+.body{
+    background-image: url('./bgimg.jpg');
+    background-size: cover;
+    height: 100vh;
+}
+
+h1{
+    padding-top: 90px;
+    width: 100%;
+    text-align: center;
+    font-size: 45px;
+    color: #0674B1;
+}
+
+h3{
+    margin-top: -20px;
+    width: 100%;
+    text-align: center;
+    font-size: 25px;
+    color: #B9B9B9;
+    font-weight: lighter;
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20px;
+}
+
+button{
+    cursor: pointer;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: auto;
+    align-content: center;
+    border: none;
+    color: white;
+    border-radius: 6px;
+    transition: 0.5s;
+    background-size: 200% auto;
+    background-image: linear-gradient(to right, #28c286 0%, #33ed7e 51%, #28c286 100%);
+}
+button:hover{
+    background-position: right center;
+     
+}
+
+
+p{
+    font-family: monospace;
+    position: fixed;
+    font-size: 11px;
+    top: 94vh;
+    padding-left: 20px;
+}
+p span{
+    color: #0674B1;
+}
+
+.lite{
+    color: #B9B9B9;
+    font-size: 13px;
+}
+
+@media screen and (max-width: 500px){
+
+    .body{
+        background-image: url(bgimg-mobjpg.png);
+        background-position: center;
+    }
+    h1{
+        padding-top: 140px;
+    }
+
+    h3{
+        font-size: 20px;
+        padding-bottom: 20px;
+    }
+    p{
+        display: none;
+    }
+}
