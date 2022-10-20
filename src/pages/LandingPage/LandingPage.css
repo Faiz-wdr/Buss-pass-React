@@ -10,6 +10,7 @@ h1{
     text-align: center;
     font-size: 45px;
     color: #0674B1;
+    transition: 0.5s;
 }
 
 h3{
@@ -57,12 +58,27 @@ p{
     padding-left: 20px;
 }
 p span{
+    display: none;
     color: #0674B1;
 }
 
 .lite{
+    transition: 0.5s;
     color: #B9B9B9;
     font-size: 13px;
+    display: none;
+}
+
+.myDIV:hover .lite {
+    display: inline-block;
+}
+img{
+    position: absolute;
+    top:80vh;
+    padding-left: 75%;
+    width: 215.3px;
+    height: 83.3px;
+    cursor: pointer;
 }
 
 @media screen and (max-width: 500px){
@@ -80,6 +96,9 @@ p span{
         padding-bottom: 20px;
     }
     p{
+        display: none;
+    }
+    img{
         display: none;
     }
 }
